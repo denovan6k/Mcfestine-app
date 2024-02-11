@@ -101,11 +101,11 @@ function Signup() {
         <h1 className="text-black text-2xl">Welcome to McFestines!👌 </h1>
         </li>
       <li>
-        <p className='text-slate-400 my-4'> Create your account, let’s get you started! </p>
+        <p className='text-[#666666] my-4'> Create your account, let’s get you started! </p>
       </li>
       </ul> </div>
     <div className="mb-4">
-        <label htmlFor="email" className="block text-slate-400 text-sm  mb-2">
+        <label htmlFor="email" className="block text-[#666666] text-sm  mb-2">
           Email Address
         </label>
         <input
@@ -122,7 +122,7 @@ function Signup() {
         {/* {errors.firstname && <span className="text-red-500 text-sm">{errors.firstname}</span>} */}
       </div>
       <div className="mb-4">
-        <label htmlFor="password" className="block text-slate-400 text-sm  mb-2">
+        <label htmlFor="password" className="block text-[#666666] text-sm  mb-2">
           Password
         </label>
         <input
@@ -139,7 +139,7 @@ function Signup() {
         {/* {errors.firstname && <span className="text-red-500 text-sm">{errors.firstname}</span>} */}
       </div>
       <div className="mb-4">
-        <label htmlFor="retypepassword" className="block text-slate-400 text-sm  mb-2">
+        <label htmlFor="retypepassword" className="block text-[#666666] text-sm  mb-2">
           Re-type Password
         </label>
         <input
@@ -158,23 +158,25 @@ function Signup() {
       <div>
        <ul className='flex space-x-2'>
         <li>
-          <input type='checkbox' id="agree" />
+          <input type='checkbox' id="agree" className='border-[#A1A1AA] rounded-xl'/>
         </li>
         <li>
-          <p className='text-slate-400 text-sm mt-1'> I have read and agree with the <span className='text-orange-400'> privacy policy</span> and </p>
+          <p className='text-[#A1A1AA] text-sm mt-1'> I have read and agree with the <span className='text-[#CF9832]'> privacy policy</span> and </p>
         </li>
        </ul>
        <p className='ml-6 text-slate-400 text-sm'>terms and conditions</p>
       </div>
       <div className='mt-12'>
-      <Buttons className='text-center w-96 text-white bg-orange-200 rounded-full p-2 mb-8' label='Sign up with google'/>
+      <Buttons className='flex items-center space-x-2 pl-24 w-96 text-[#666666] bg-[#F5EAD6] rounded-full p-2 mb-8' label='Sign up with google'
+      icon='flat-color-icons:google'/>
     <Buttons
-      className={`text-center w-96 text-white bg-orange-600 rounded-full p-2 mb-4`}
+      className={`text-center w-96 text-white bg-[#CF9832] rounded-full p-2 mb-4`}
       label="Sign up"
+
     />
       </div>
       <div className="flex mt-4 mb-20">
-          <p className='text-sm text-slate-400'>Already have an account</p> <button className="ml-1 text-yellow-500 underline text-sm " >Signup?</button>
+          <p className='text-sm text-[#64748B]'>Already have an account</p> <button className="ml-1 text-[#CF9832] underline text-sm " >Signup?</button>
           {/* onClick={handleClick} */}
         </div>
       

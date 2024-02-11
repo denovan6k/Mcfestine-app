@@ -45,11 +45,11 @@ function Login() {
         <h1 className="text-black text-2xl">Hi there, welcome back😜 </h1>
         </li>
       <li>
-        <p className='text-slate-400 my-4'> Please enter your details to login. </p>
+        <p className='text-[#666666] my-4'> Please enter your details to login. </p>
       </li>
       </ul> </div>
     <div className="mb-4">
-        <label htmlFor="username" className="block text-slate-400 text-sm  mb-2">
+        <label htmlFor="username" className="block text-[#666666] text-sm  mb-2">
           Email Address
         </label>
         <input
@@ -64,7 +64,7 @@ function Login() {
         {/* {errors.firstname && <span className="text-red-500 text-sm">{errors.firstname}</span>} */}
       </div>
       <div className="mb-4">
-        <label htmlFor="username" className="block text-slate-400 text-sm  mb-2">
+        <label htmlFor="username" className="block text-[#666666] text-sm  mb-2">
           Password
         </label>
         <input
@@ -84,20 +84,21 @@ function Login() {
           <input type='checkbox'/>
         </li>
         <li>
-          <p className='text-slate-400 text-sm mt-1 mr-32'> Remember me </p>
+          <p className='text-[#A1A1AA] text-sm mt-1 mr-32'> Remember me </p>
         </li>
         <li>
-          <p className='text-orange-400 text-sm mt-1 mr-20'> Forgot password? </p>
+          <p className='text-[#CF9832] text-sm mt-1 mr-20'> Forgot password? </p>
         </li>
        </ul>
        
       </div>
       <div className='mt-12'>
-      <Buttons className='text-center w-96 text-white bg-orange-200 rounded-full p-2 mb-8' label='Sign up with google'/>
-      <Buttons className='text-center w-96 text-white bg-orange-600 rounded-full p-2 mb-4' label='Sign up'/>
+      <Buttons className='flex items-center space-x-2 pl-24 w-96 text-[#666666] bg-[#F5EAD6] rounded-full p-2 mb-8' label='Sign up with google'
+      icon='flat-color-icons:google'/>
+      <Buttons className='text-center w-96 text-white bg-[#CF9832] rounded-full p-2 mb-4' label='Sign up'/>
       </div>
       <div className="flex mt-4 mb-20">
-          <p className='text-sm text-slate-400'> Don’t have an account?</p> <button className="ml-1 text-yellow-500 underline text-sm " >Signup?</button>
+          <p className='text-sm text-[#64748B]'> Don’t have an account?</p> <button className="ml-1 text-[#CF9832] underline text-sm " >Signup?</button>
           {/* onClick={handleClick} */}
         </div>
       

@@ -15,8 +15,9 @@ function Navbar() {
                 <InlineIcon icon="material-symbols:search" className='mb-4 ml-2 text-slate-500'/>
             </span>
             <Buttons
-      className={`text-center w-32 -ml-14 text-white bg-orange-600 rounded-full h-10  `}
-      label="filter"
+      className={`flex items-center pl-6  w-32 -ml-14 text-white bg-[#CF9832] rounded-full h-10  `} 
+      icon='ic:round-tune'
+      name="Filter"
     />
             {/* <button type="text" class="bg-orange-500 text-white rounded-full px-2  md:px-3 py-0 md:py-1">filter</button> */}
         </div>

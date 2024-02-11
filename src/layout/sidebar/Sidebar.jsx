@@ -13,14 +13,19 @@ function Sidebar() {
  
   const navigate = useNavigate();
   const [activeItem, setActiveItem] = useState(null);
-
+  // const [act,setAct]=useState(false)
   useEffect(() => {
     // Navigate to the dashboard route and set it as the active component when the component mounts
     navigate('/layout/home');
-    
+   
   }, []);
   const handleClick = (index) => {
     setActiveItem(index);
+    // if (val.title === 'Dashboard') {
+    //   setAct(true);
+    // } else {
+    //   setAct(false);
+    // }
   };
   return (
     <div className='ml-10'>
@@ -28,12 +33,13 @@ function Sidebar() {
       <ul className=''>
         {SidebarData.map((val, index) => (
           <li key={index} onClick={() => handleClick(index)} 
-          className={`hover:text-orange-500 hover:bg-orange-200 hover:rounded-3xl mb-6 p-2 ${activeItem === index? 'text-orange-500 bg-orange-200 rounded-3xl ' : ''}`}
+          className={`hover:text-[#CF9832] hover:bg-[#F5EAD6] hover:rounded-3xl mb-6 p-2 ${activeItem === index? 'text-[#CF9832] bg-[#F5EAD6] rounded-3xl ' : ''} `}
           >
+            {/* ${val.title === 'Dashboard' && act ?'text-[#CF9832] bg-[#F5EAD6] rounded-3xl ':''} */}
             <Link to={val.link}>
               <div className='flex space-x-4'>
-                <div className='text-slate-700 '>{val.icon}</div>
-                <div className='text-slate-700 '>{val.title}</div>
+                <div className='text-[#404040] '>{val.icon}</div>
+                <div className='text-[#404040] '>{val.title}</div>
               </div>
             </Link>
           </li>
@@ -41,7 +47,7 @@ function Sidebar() {
       </ul>
 
       <img className='mt-20 mb-20' src={img2} alt='girl' />
-      <div className='flex space-x-4 mb-20 text-slate-500'>
+      <div className='flex space-x-4 mb-20 text-[#404040]'>
         <Icon icon='ic:round-logout' width={24} height={24} />
         <span className=''><p>Log out</p></span>
       </div>

@@ -3,19 +3,19 @@ import { Icon, iconExists } from '@iconify/react';
 const SidebarData=  [
     {
        title:'Dashboard',
-       icon: <Icon icon='material-symbols-light:dashboard-outline' height={24}/>,
+       icon: <Icon icon='material-symbols:dashboard-outline' height={24}/>,
        link:'/layout/Home'
     },
     
     {
         title:'Inventory',
-       icon: <Icon icon='material-symbols:inventory-2' height={24}/>,
+       icon: <Icon icon='ic:outline-inventory-2' height={24}/>,
        link:'/layout/Dashboard'
 
     },
     {
         title:'My List',
-       icon: <Icon icon='material-symbols-light:list'height={24}/>,
+       icon: <Icon icon='material-symbols:list'height={24}/>,
        link:'/MyList'
     },
     {

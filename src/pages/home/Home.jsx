@@ -11,7 +11,7 @@ function Home() {
       
             <span>Featured Item</span>
         
-        <ul className='flex mr-4 space-x-4 text-orange-400'>
+        <ul className='flex mr-4 space-x-4 text-[#CF9832]'>
           <li>
           <span>Go to Store</span>
           </li>
