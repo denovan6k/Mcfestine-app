@@ -23,7 +23,7 @@ function Home() {
     
       </div>
       <div>
-        {/* <Card/> */}
+        <Card/>
       </div>
     </div>
   )
