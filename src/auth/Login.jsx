@@ -31,6 +31,7 @@ function Login() {
         const logGoogleUser = async () => {
                 const response = await signInWithGooglePopup();
                 console.log(response);
+                navigate("/layout")
             }
   return (
     <div className="">

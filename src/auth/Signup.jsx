@@ -5,7 +5,8 @@ import img2 from '../assets/Frame 59955.png'
 import Buttons from '../../public/components/Buttons'
 import { auth } from '../firebase'
 import {  useNavigate } from "react-router-dom";
-
+import { signInWithGooglePopup } from '../firebase'
+import { Icon } from '@iconify/react'
 function Signup() {
   const navigate = useNavigate();
       const [email,setEmail] = useState('')
@@ -87,6 +88,11 @@ function Signup() {
  
    
     }
+    const logGoogleUser = async () => {
+      const response = await signInWithGooglePopup();
+      console.log(response);
+      navigate("/layout")
+  }
     return (
     <div className="">
       <div className='grid grid-cols-2'>
@@ -171,8 +177,11 @@ function Signup() {
        {/* <p className='ml-6 text-slate-400 text-sm'>terms and conditions</p> */}
       </div>
       <div className='mt-12'>
-      <Buttons className='flex items-center space-x-2 pl-24 w-96 text-[#666666] bg-[#F5EAD6] rounded-full p-2 mb-8' label='Sign up with google'
-      icon='flat-color-icons:google'/>
+      <button className='flex items-center space-x-2 pl-24 w-96 text-[#666666] bg-[#F5EAD6] rounded-full p-2 mb-8' 
+       onClick={logGoogleUser}>
+        <Icon icon='flat-color-icons:google' className='mr-2'/>
+        Sign up with google
+       </button>
     <Buttons
       className={`text-center w-96 text-white bg-[#CF9832] rounded-full p-2 mb-4`}
       label="Sign up"
