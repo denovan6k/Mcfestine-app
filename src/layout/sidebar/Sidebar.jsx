@@ -37,8 +37,8 @@ function Sidebar() {
           >
             {/* ${val.title === 'Dashboard' && act ?'text-[#CF9832] bg-[#F5EAD6] rounded-3xl ':''} */}
             <Link to={val.link}>
-              <div className='flex space-x-4'>
-                <div className='text-[#404040] '>{val.icon}</div>
+              <div className='flex space-x-2'>
+                <div className='text-[#404040] ml-4 '>{val.icon}</div>
                 <div className='text-[#404040] '>{val.title}</div>
               </div>
             </Link>

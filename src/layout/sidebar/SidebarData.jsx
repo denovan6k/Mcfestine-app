@@ -10,33 +10,33 @@ const SidebarData=  [
     {
         title:'Inventory',
        icon: <Icon icon='ic:outline-inventory-2' height={24}/>,
-       link:'/layout/Dashboard'
+       link:'/layout/inventory'
 
     },
     {
         title:'My List',
        icon: <Icon icon='material-symbols:list'height={24}/>,
-       link:'/MyList'
+       link:'/layout/mylist'
     },
     {
         title:'Order reports',
        icon: <Icon icon='material-symbols:history'height={24}/>,
-       link:'/Orderreports'
+       link:'/layout/Orderreports'
     },
     {
         title:'Reservations',
        icon: <Icon icon='material-symbols:event-seat-outline'height={24}/>,
-       link:'/Reservations'
+       link:'/layout/reservation'
     },  
     {
         title:'Settings',
        icon: <Icon icon='uil:setting' height={24}/>,
-       link:'/Settings'
+       link:'/layout/settings'
     },
     {
         title:'My Account',
        icon: <Icon icon='material-symbols:account-circle' height={24}/>,
-       link:'/My Account'
+       link:'/layout/myaccount'
     },
 
 ]
