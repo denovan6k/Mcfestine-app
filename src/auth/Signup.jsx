@@ -24,14 +24,18 @@ function Signup() {
       newErrors.email = 'Email is required';
       isValid = false;
     }
-      //Validate retype password
-     if (retypepassword !== password ) {
-     newErrors.retypepassword='Password does not match'
-    }
+    
+ 
     // Validate password
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
-    if (!password || !passwordRegex.test(password)) {
+    if (!password || !passwordRegex.test(password) ) {
       newErrors.password = 'Password must be at least 8 characters, including one uppercase letter, one lowercase letter, and one digit';
+      
+      isValid = false;
+    }
+      //Validate retype password
+    if (retypepassword !== password){
+      newErrors.retypepassword='Password does not match'
       isValid = false;
     }
   
@@ -156,15 +160,15 @@ function Signup() {
         {/* {errors.firstname && <span className="text-red-500 text-sm">{errors.firstname}</span>} */}
       </div>
       <div>
-       <ul className='flex space-x-2'>
+       {/* <ul className='flex space-x-2'>
         <li>
           <input type='checkbox' id="agree" className='border-[#A1A1AA] rounded-xl'/>
         </li>
         <li>
           <p className='text-[#A1A1AA] text-sm mt-1'> I have read and agree with the <span className='text-[#CF9832]'> privacy policy</span> and </p>
         </li>
-       </ul>
-       <p className='ml-6 text-slate-400 text-sm'>terms and conditions</p>
+       </ul> */}
+       {/* <p className='ml-6 text-slate-400 text-sm'>terms and conditions</p> */}
       </div>
       <div className='mt-12'>
       <Buttons className='flex items-center space-x-2 pl-24 w-96 text-[#666666] bg-[#F5EAD6] rounded-full p-2 mb-8' label='Sign up with google'

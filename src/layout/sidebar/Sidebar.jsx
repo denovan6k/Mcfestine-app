@@ -6,7 +6,8 @@ import img1 from '../sidebar/images/Logo.png';
 import img2 from './images/image 55 (1).png';
 import { Icon } from '@iconify/react';
 import { useNavigate } from 'react-router-dom';
-
+import {  signOut } from "firebase/auth";
+import {auth} from '../../firebase';
 
 
 function Sidebar() {
@@ -27,6 +28,17 @@ function Sidebar() {
     //   setAct(false);
     // }
   };
+  
+ 
+    const handleLogout = () => {               
+        signOut(auth).then(() => {
+        // Sign-out successful.
+            navigate("/");
+            console.log("Signed out successfully")
+        }).catch((error) => {
+        // An error happened.
+        });
+    }
   return (
     <div className='ml-10'>
       <img className='mt-8 mb-20' src={img1} alt='boy' />
@@ -47,11 +59,11 @@ function Sidebar() {
       </ul>
 
       <img className='mt-20 mb-20' src={img2} alt='girl' />
-      <div className='flex space-x-4 mb-20 text-[#404040]'>
+      <button onClick={handleLogout} className='flex space-x-4 mb-20 text-[#404040]'>
         <Icon icon='ic:round-logout' width={24} height={24} />
         <span className=''><p>Log out</p></span>
-      </div>
-    
+      </button>
+      
     </div>
   );
 }

@@ -7,7 +7,7 @@ function Buttons({label,className,icon,name}) {
   return (
     <div>
       <button   className={className}>
-      <InlineIcon  icon={icon} className=''/>
+      <InlineIcon  icon={icon} className='' />
         <span className=''>
         {label}
         </span>
@@ -22,10 +22,10 @@ function Buttons({label,className,icon,name}) {
 }
 Buttons.propTypes = {
     label: PropTypes.string,
-    name: PropTypes.string.isRequired,
-    icon: PropTypes.string.isRequired,
+    name: PropTypes.string,
+    icon: PropTypes.string,
     className: PropTypes.string.isRequired,
-    // onClick: PropTypes.func.isRequired,
+  
     // disabled: PropTypes.bool,
   };
 export default Buttons

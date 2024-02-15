@@ -34,7 +34,7 @@ function App() {
         <Route path="/Navbar" element={<Navbar/>} />
         
 
-            <Route path="layout" element={<Layout />}>
+        <Route path="/layout" element={<Layout />}>
          
           <Route path="Home" element={<Home />} />
           <Route path="inventory" element={<Inventory/>} />
